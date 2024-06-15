@@ -180,7 +180,7 @@ service:
 ### Ingress
 ingress:
   enabled: true
-  className: ""
+  className: "nginx"
   annotations:
     {}
     # kubernetes.io/ingress.class: nginx
@@ -188,8 +188,8 @@ ingress:
   hosts:
     - host: kestra.localdev.me
       paths:
-        - path: /
-          pathType: prefix
+        - path: "/""
+          pathType: "Prefix"
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
