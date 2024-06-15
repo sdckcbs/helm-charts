@@ -188,7 +188,7 @@ ingress:
   hosts:
     - host: kestra.localdev.me
       paths:
-        - path: "/""
+        - path: "/"
           pathType: "Prefix"
   tls: []
   #  - secretName: chart-example-tls
