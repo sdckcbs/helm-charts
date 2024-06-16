@@ -191,7 +191,6 @@ ingress:
         - path: "/"
           pathType: "Prefix"
   tls:
-    enabled: true
     hosts:
       - kestra.localdev.me
 
