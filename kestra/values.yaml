@@ -192,7 +192,7 @@ ingress:
           pathType: "Prefix"
   # tls: []
   tls:
-    - secretName: ""
+    - secretName: "kestra-ingress-tls"
       hosts:
         - kestra.localdev.me
 
