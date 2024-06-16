@@ -190,11 +190,10 @@ ingress:
       paths:
         - path: "/"
           pathType: "Prefix"
-  tls:
-    hosts:
-      - kestra.localdev.me
-
+  tls: []
   #  - secretName: chart-example-tls
+  #    hosts:
+  #      - chart-example.local
 
 ### Global Deployement
 nameOverride: ""
