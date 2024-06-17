@@ -167,14 +167,14 @@ tolerations: []
 
 affinity: {}
 
-extraVolumeMounts:
-  - name: mage-fs
-    mountPath: /home/src
+# extraVolumeMounts:
+#   - name: mage-fs
+#     mountPath: /home/src
 
-extraVolumes:
-  - name: mage-fs
-    hostPath:
-      path: /path/to/mage_project
+# extraVolumes:
+#   - name: mage-fs
+#     hostPath:
+#       path: /path/to/mage_project
 
 # config: Default configuration for mageai as environment variables. These get injected directly in the container.
 config: {}
