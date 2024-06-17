@@ -183,7 +183,6 @@ service:
 
 
 ### Ingress
-### Ingress
 ingress:
   enabled: true
   className: "nginx"
@@ -192,7 +191,7 @@ ingress:
     # kubernetes.io/ingress.class: nginx
   # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: mage.localdev.me
+    - host: kestra.localdev.me
       paths:
         - path: "/"
           pathType: "Prefix"
