@@ -148,7 +148,7 @@ ingress:
           pathType: "Prefix"
   # tls: []
   tls:
-    - secretName: ""
+    - secretName: "mage-ingress-tls"
       hosts:
         - mage.localdev.me
 
