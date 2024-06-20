@@ -143,7 +143,7 @@ elasticsearch:
 
 ### Minio
 minio:
-  enabled: true
+  enabled: false
   rootUser: please-change-me
   rootPassword: its-not-a-secret
   mode: standalone
