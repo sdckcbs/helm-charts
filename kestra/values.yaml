@@ -107,17 +107,16 @@ dind:
   enabled: true
   image:
     image: docker
-    tag: dind-rootless
+    tag: dind
     pullPolicy: IfNotPresent
   socketPath: /dind/
   tmpPath: /tmp/
   resources: {}
   args:
     - --log-level=fatal
-    - --group=1000
   securityContext:
-    runAsUser: 1000
-    runAsGroup: 1000
+    runAsUser: 0
+    runAsGroup: 0
   extraVolumeMounts: []
   extraEnv: []
 
@@ -254,8 +253,8 @@ securityContext:
   #   - ALL
   # readOnlyRootFilesystem: true
   # runAsNonRoot: true
-  runAsUser: 1000
-  runAsGroup: 1000
+  runAsUser: 0
+  runAsGroup: 0
 
 ### Startup / Readiness / Liveness probe config.
 ### ref: https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-probes/
